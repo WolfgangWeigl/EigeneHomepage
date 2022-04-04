@@ -1,0 +1,35 @@
+* {
+    background-color: #150F29;
+    color: #E9D9CC;
+}
+.slider {
+
+}
+
+.slider-left {
+    transform: translateX(0%);
+    align-items: center;
+}
+
+.slider-right{
+    transform: translateX(50%);
+    align-items: center;
+}
+
+.slider-mail {
+    transition: all .5s;
+    writing-mode: vertical-lr;
+    color: #c6c8cd;
+}
+
+.slider-space {
+    background-color: #c6c8cd;
+    margin-top: 10px;
+    width: 1px;
+    height: 120px;
+
+}
+
+.headline {
+    
+}
