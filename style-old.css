@@ -1,0 +1,56 @@
+* {
+    background-color: #150F29;
+    color: #E9D9CC;
+}
+
+aside {
+    height: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+ .slider {
+    display: flex;
+    align-items: center;
+} 
+ .slider-left ul{
+    transform: translateX(0%);
+    align-items: center;
+    position: bottom;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: large;
+} 
+
+ .slider-right{
+    align-items: center;
+} 
+
+.slider-mail {
+    transition: all .5s;
+    writing-mode: vertical-lr;
+    color: #c6c8cd;
+}
+.slider-mail :hover {
+    color:aqua;
+}
+
+.slider-space {
+    background-color: #c6c8cd;
+    margin-top: 10px;
+    width: 2px;
+    height: 120px;
+}
+
+.headline {
+    text-align: center;
+}
+
+.about-text a{
+    text-decoration: none;
+    color: #00df00;
+}
+
+.card-title:hover {
+    
+}

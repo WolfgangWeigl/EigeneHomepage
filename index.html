@@ -1,108 +1,235 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 
 <head>
     <title>Wolfgang Weigl | Portfolio Webpage</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="images/Logo-01-Facebook_Profil.svg" type="image/svg">
+    <meta name="description" content="">
+    <meta name="keywords" content="portfolio wolfgangweigl software">
 </head>
 
 <body>
     <div class="container-fluid">
-        <div id="header" class="row">
-            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom sticky-top">
-                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                    <img src="images/Logo-01-ohne_Hintergrund.svg" width="60" height="40" alt="Logo">
-                    <span class="fs-4">weigl.</span>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark px-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="navbar-logo" src="images/Logo-01-ohne_Hintergrund.svg" width="auto" height="40"
+                        alt="Logo">
+                    <span class="navbar-text">weigl.</span>
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-1">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item d-block d-lg-none align-items-center mx-auto px-auto">
+                            <a href="https://github.com/WolfgangWeigl" target="_blank"><i id="slider-social-icon"
+                                    class="bi-github" role="img" aria-label="GitHub"></i></a>
+                            <a href="mailto:wolfgang.weigl1994@gmail.com" target="_blank"><i id="slider-social-icon"
+                                    class="bi bi-envelope-fill" role="img" aria-label="Mail"></i></a>
+                            <a href="https://www.linkedin.com/in/wolfgang-weigl-933885236/" target="_blank"><i
+                                    id="slider-social-icon" class="bi bi-linkedin" role="img"
+                                    aria-label="LinkedIn"></i></a>
 
-                <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                </ul>
-            </header>
-        </div>
-        <div id="middle" class="row">
-            <aside class="slider slider-left col-md-1">
-                <ul>
-                    <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-                    <li><a href="#" class="material-icons-outlined"><span class="label">Mail</span></a></li>
-                </ul>
-                <div class="slider-space"></div>
-            </aside>
-            <main class="col-md-10">
-                <section id="intro" class="d-flex justify-content-center row col-md-5 ">
-                    <h4 >Hi, my Name is</h4>
-                    <h1 class="display-1"><strong>Wolfgang Weigl</strong></h1>
-                    <h5 class="display-5">I'm a software engineer.</h5>
-                    <p>I am a software engineer from Bavaria, DE. I live as minimalistic as possible and strive to
-                        transfer this simplicity to my software projects. That's why I try to make my programs as easy
-                        to use as possible and remove unnecessary design elements.</p>
-                </section>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-                <section id="about" class="row col-md-5 text-center">
-                    <h1>About.</h1>
-                    <div class="about-container">
-                        <img src="images/Logo-01-4K.svg" width="300" height="200" alt="Logo-01-4K">
-                        <p class="about-text">Hey, I am Wolfgang Weigl, a software developer from Bavaria, DE.</p>
-                        <p class="about-text about-space">
-                            "I studied medical informatics at the technical university of applied sciences Regensburg
-                            (dt. "
-                            <a href="https://www.oth-regensburg.de/" target="_blank">OTH Regensburg</a>
-                            ") and graduated with a Bachelor of Science (B.Sc.). Now i study artificial intelligence at
-                            the technical university of applied sciences Amberg-Weiden (dt. "
-                            <a href="https://www.oth-aw.de/" target="_blank">OTH Amberg-Weiden</a>
-                            ")."
-                        </p>
-                        <p class="about-text">And this is my skillset:</p>
-                        <div class="language-container">
+        <div class="container-fluid">
+            <div class="row">
+                <aside class="col-1 d-none d-lg-block align-self-end mx-auto" id="slider-left">
+                    <ul id="slider-socials">
+                        <li><a href="https://github.com/WolfgangWeigl" target="_blank"><i id="slider-social-icon"
+                                    class="bi-github" role="img" aria-label="GitHub"></i></a></li>
+                        <li><a href="mailto:wolfgang.weigl1994@gmail.com" target="_blank"><i id="slider-social-icon"
+                                    class="bi bi-envelope-fill" role="img" aria-label="Mail"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/wolfgang-weigl-933885236/" target="_blank"><i
+                                    id="slider-social-icon" class="bi bi-linkedin" role="img"
+                                    aria-label="LinkedIn"></i></a></li>
+                    </ul>
+                    <div id="slider-spacer"></div>
+                </aside>
 
+                <main class="col">
+                    <div class="row justify-content-center">
+                        <div class="col-10" id="intro">
+                            <h5>Hi, my Name is</h5>
+                            <h1 class="display-1"><strong>Wolfgang Weigl</strong></h1>
+                            <h1 class="display-5"><strong>I'm a software engineer</strong></h1>
+                            <p>I am a software engineer from Bavaria, DE. I live as minimalistic as possible and
+                                strive to transfer this simplicity to my software projects. That's why I try to make
+                                my programs as easy to use as possible and remove unnecessary design elements.</p>
                         </div>
                     </div>
-                </section>
-
-                <section id="projects" class="row">
-                    <h1 class="headline">Projects</h1>
-                    <div class="project-timeline">
-                        <ul>
-                            <li class="project">
-                                <h2>April, 2022</h2>
-                                <h1>Portfolio Webpage</h1>
-                                <p>"Description"</p>
-                                <div class="lg-container">
-                                    <h5>JS HTML5 CSS3</h5>
-                                    <a href="#">Link</a>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-10 text-center" id="about">
+                            <h1>About.</h1>
+                            <img class="img-fluid mx-auto d-block" src="images/Logo-01-4K.svg"  max-width="80" height="auto"
+                                alt="Logo-01-4K">
+                            <p>Hey, I am Wolfgang Weigl, a software developer from Bavaria, DE.\<br>
+                                "I studied medical informatics at the technical university of applied sciences
+                                Regensburg
+                                (dt. "
+                                <a class="href-links" href="https://www.oth-regensburg.de/" target="_blank">OTH
+                                    Regensburg</a>
+                                ") and graduated with a Bachelor of Science (B.Sc.). Now i study artificial intelligence
+                                at
+                                the technical university of applied sciences Amberg-Weiden (dt. "
+                                <a class="href-links" href="https://www.oth-aw.de/" target="_blank">OTH
+                                    Amberg-Weiden</a>
+                                ")."
+                            </p>
+                            <p class="about-text">And this is my skillset:</p>
+                            <div class="languages">
+                                <a href="https://www.python.org/" target="_blank"><img class="language-icons" src="https://img.icons8.com/color/96/000000/python--v1.png"/></a>
+                                <a href="https://de.wikipedia.org/wiki/C_(Programmiersprache)" target="_blank"><img class="language-icons" src="https://img.icons8.com/color/96/000000/c-programming.png"/></a>
+                                <a href="https://de.wikipedia.org/wiki/C%2B%2B" target="_blank"><img class="language-icons" src="https://img.icons8.com/color/100/000000/c-plus-plus-logo.png"/></a>
+                                <a href="https://de.wikipedia.org/wiki/C-Sharp" target="_blank"><img class="language-icons" src="https://img.icons8.com/color/96/000000/c-sharp-logo-2.png"/></a>
+                                <a href="https://de.wikipedia.org/wiki/CSS3" target="_blank"><img class="language-icons" src="https://img.icons8.com/color/96/000000/css3.png"/></a>
+                                <a href="https://de.wikipedia.org/wiki/HTML5" target="_blank"><img class="language-icons" src="https://img.icons8.com/color/96/000000/html-5--v1.png"/></a>
+                                <a href="https://developer.mozilla.org/de/docs/Web/JavaScript" target="_blank"><img class="language-icons" src="https://img.icons8.com/ios-filled/100/000000/javascript-logo.png"/></a>
+                                <a href="https://getbootstrap.com/" target="_blank"><img class="language-icons" src="https://img.icons8.com/color/96/000000/bootstrap.png"/></a>
+                                <a href="https://de.wikipedia.org/wiki/Linux" target="_blank"><img class="language-icons" src="https://img.icons8.com/color/96/000000/linux--v1.png"/></a>
+                            </div>
+                        </div>
                     </div>
-                </section>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-10 text-center" id="projects">
+                            <h1>Projects.</h1>
+                            <div id="carouselControls" class="carousel slide mt-3" data-bs-ride="carousel">
+                                <div class="carousel-inner text-start">
+                                    <div class="carousel-item active">
+                                        <div class="card mb-3 mx-auto" style="max-width: 540px;">
+                                            <div class="row g-0">
+                                                <div class="col-md-3 text-center align-self-center">
+                                                    <i id="slider-social-icon-card" class="bi-github" role="img"
+                                                        aria-label="GitHub"></i>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"><a class="href-links"
+                                                                href="https://github.com/WolfgangWeigl/EigeneHomepage"
+                                                                target="_blank">Portfolio Webpage</a></h5>
+                                                        <p class="card-text">For some practice this Webpage have to be
+                                                            created for the course <i>Big Data & Cloud Computing</i>.
+                                                            It's one of the first projects I released on GitHub.
+                                                            <br>
+                                                            <span class="badge bg-secondary">CSS3</span> <span
+                                                                class="badge bg-secondary">HTML5</span> <span
+                                                                class="badge bg-secondary">JS</span>
+                                                        </p>
+                                                        <p class="card-text"><small class="text-muted">Last updated 3
+                                                                mins ago</small></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card mb-3 mx-auto" style="max-width: 540px;">
+                                            <div class="row g-0">
+                                                <div class="col-md-3 text-center align-self-center">
+                                                    <i id="slider-social-icon-card" class="bi-github" role="img"
+                                                        aria-label="GitHub"></i>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"><a class="href-links"
+                                                                href="https://github.com/WolfgangWeigl/Dummy"
+                                                                target="_blank">Dummy#1</a></h5>
+                                                        <p class="card-text">This Dummy is a placeholder for future
+                                                            projects.
+                                                            <br>
+                                                            <span class="badge bg-secondary">C#</span>
+                                                        </p>
+                                                        <p class="card-text"><small class="text-muted">Last updated 3
+                                                                mins ago</small></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card mb-3 mx-auto" style="max-width: 540px;">
+                                            <div class="row g-0">
+                                                <div class="col-md-3 text-center align-self-center">
+                                                    <i id="slider-social-icon-card" class="bi-github" role="img"
+                                                        aria-label="GitHub"></i>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"><a class="href-links"
+                                                                href="https://github.com/WolfgangWeigl/Dummy"
+                                                                target="_blank">Dummy #2</a></h5>
+                                                        <p class="card-text">This Dummy is a placeholder for future
+                                                            projects.
+                                                            <br>
+                                                            <span class="badge bg-secondary">Python</span>
+                                                        </p>
+                                                        <p class="card-text"><small class="text-muted">Last updated 3
+                                                                mins ago</small></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-10 text-center" id="contact">
+                            <h1>Contact</h1>
+                            <p>You like what I do and want to get in touch with me now?</p>
+                            <p>Do not hesitate and write me an email.</p>
+                            <a href="mailto:wolfgang.weigl1994@gmail.com" class="btn btn-primary">Write a Mail</a>
+                        </div>
+                    </div>
+                </main>
 
-                <section id="contact" class="row">
-                    <h1 class="headline">Contact</h1>
-                    <h2>You like what I do and want to get in touch with me now?</h2>
-                    <h2>Do not hesitate and write me an email.</h2>
-                    <a href="mailto:wolfgang.weigl1994@gmail.com" class="btn">Write a Mail</a>
-                </section>
-            </main>
-            <aside class="slider slider-right col-md-1">
-                <a href="mailto:wolfgang.weigl1994@gmail.com" class="slider-mail">wolfgang.weigl1994@gmail.com</a>
-                <div class="slider-space"></div>
-            </aside>
+                <aside class="col-1 d-none d-lg-block align-self-end mx-auto" id="slider-right">
+                    <a href="mailto:wolfgang.weigl1994@gmail.com" id="slider-mail">wolfgang.weigl1994@gmail.com</a>
+                    <div id="slider-spacer"></div>
+                </aside>
+            </div>
         </div>
-        <div id="footer" class="row">
-            <footer class="col-md-12 text-center">
-                <p> &copy; 2022 bei Wolfgang Weigl </p>
+
+        <div class="container-fluid my-4">
+            <footer class="text-center">
+                <span style="font-size:small">
+                    &copy; Wolfgang Weigl | 2022
+                </span>
             </footer>
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
